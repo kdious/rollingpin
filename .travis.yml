@@ -1,8 +1,3 @@
-branches:
-    only:
-        - master
-        - add_testspace_support
-
 sudo: required
 dist: trusty
 group: deprecated-2017Q2
