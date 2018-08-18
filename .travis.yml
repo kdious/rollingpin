@@ -36,8 +36,8 @@ before_install:
 
 script:
     - nosetests -v
-    - /usr/local/bin/flake8 --exit-zero rollingpin/
-	- pylint --errors-only rollingpin/
+    #- /usr/local/bin/flake8 --exit-zero rollingpin/
+    #- pylint --errors-only rollingpin/
 
 after_script:
     - testspace static_analysis.log{lint} [py-${TRAVIS_PYTHON_VERSION}]nosetests.xml{.} build/coverage/coverage.xml
